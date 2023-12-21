@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700;900&&family=Luxurious+Script&family=Parisienne&family=Dancing+Script:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+}
+
+.overlayModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(113, 121, 113, 0.7);
+}
+
+.arrow-icon {
+  font-size: 64px; /* Ajusta el tamaño según tus necesidades */
+  opacity: 0; /* Inicialmente oculto */
+  animation: arrow-fade 1.5s infinite alternate; /* 2s de duración de animación, alternando entre fade in y fade out */
+  transform: translateX(-50%);
+}
+
+.heart-icon {
+  font-size: 64px; /* Ajusta el tamaño según tus necesidades */
+  /* Color White */
+  color: #fff;
+}
+
+@keyframes arrow-fade {
+  0% {
+    opacity: 0; /* Inicio de la animación, completamente transparente */
+    transform: translateY(-10px); /* Mueve hacia arriba 10px */
+  }
+  100% {
+    opacity: 1; /* Fin de la animación, completamente visible */
+    transform: translateY(0); /* Vuelve a la posición original */
+  }
+}
+
+/* Agrega estilos para el scrollbar */
+/* Track */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+/* Thumb (el "tirador" que puedes arrastrar) */
+::-webkit-scrollbar-thumb {
+  background: #717571; /* Color del "thumb" */
+  border-radius: 12px; /* Borde redondeado del "thumb" */
+}
+
+/* Track (el fondo del scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f8c9c9; /* Color del fondo del "track" */
+  border-radius: 12px; /* Borde redondeado del "track" */
+}
+
+/* Aqui Empiezan Los Diseños de laramos */
+
+.text-bold {
+  font-weight: bold;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.countdown-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Añadido para centrar los elementos verticalmente */
+  align-items: center;
+  margin: 10px;
+}
+
+.countdown-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f7f1ee;
+}
+
+.countdown-number {
+  font-size: 1.5em;
+  color: #000;
+}
+
+.countdown-label {
+  font-size: 1em;
+  color: #000;
+  margin-top: 5px;
+}
+
+.pulsate {
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-calendar .react-datepicker__day--highlighted {
+  background-color: transparent;
+  position: relative;
+}
+
+
+.heart-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: red;
+}
