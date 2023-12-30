@@ -16,7 +16,6 @@ const Classic = ({ name1, name2, invitationStyle }) => {
       <Ceremony invitationStyle={invitationStyle}/>
       <Guests invitationStyle={invitationStyle}/>
       <ConfirmAssist />
-      <DressCode />
       <Instagram />
       <Information />
     </>
