@@ -58,7 +58,7 @@ const Guests = ({ invitationStyle }) => {
             <img src={ imagePath } alt="image_number" className="w-20 h-20 mb-6 rounded-xl" />
         </div>
         <h2 className="text-md text-center">
-          lugares exclusivamente para ti.
+         {invitationStyle.includes("one") ? 'lugar' : 'lugares'} exclusivamente para ti.
         </h2>
       </div>
     </>
