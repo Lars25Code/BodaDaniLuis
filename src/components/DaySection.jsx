@@ -5,7 +5,7 @@ import { CiHeart } from "react-icons/ci";
 
 const DaySection = ({ invitationStyle }) => {
   const classicStyle =
-    "w-full bg-[#e6c3c4] h-62 flex flex-col items-center text-center gap-4 p-2";
+    "w-full bg-[#F1C0A1] h-62 flex flex-col items-center text-center gap-4 p-2";
   const premiumStyle =
     "w-full bg-[#011627] h-62 flex flex-col items-center justify-center gap-4 p-2";
 
